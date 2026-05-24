@@ -1,0 +1,8 @@
+# Copy to terraform.tfvars (gitignored) or use -var-file
+
+# cluster_name = "bitgo-infraops-dev"
+
+# Optional overrides if auto-discovery fails:
+# alb_load_balancer_dimension = "app/k8s-default-scalable-78417c9b8f/608439848"
+
+# alarm_sns_topic_arns = ["arn:aws:sns:us-east-1:334455667537:alb-alarms"]

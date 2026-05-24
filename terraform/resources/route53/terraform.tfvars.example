@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars — fill hosted_zone_id from Route53 console
+
+hosted_zone_id = "Z0123456789ABC"
+create_zone    = false
+
+# With or without dualstack. prefix — module normalizes to dualstack for alias targets.
+alb_dns_name = "k8s-default-scalable-78417c9b8f-608439848.us-east-1.elb.amazonaws.com"

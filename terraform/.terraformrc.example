@@ -1,0 +1,6 @@
+# Copy to your home directory:
+#   cp terraform/.terraformrc.example ~/.terraformrc
+#
+# Speeds up provider load and avoids repeated downloads.
+
+plugin_cache_dir = "$HOME/.terraform.d/plugin-cache"

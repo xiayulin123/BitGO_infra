@@ -1,0 +1,24 @@
+# Copy sections into each resources/<stack>/_workspaces.tf
+# Do not apply this file directly — it is documentation only.
+
+locals {
+  account_ids = {
+    dev     = "111111111111"
+    staging = "222222222222"
+    prod    = "333333333333"
+  }
+
+  assume_role_arns = {
+    dev     = "arn:aws:iam::111111111111:role/TerraformAdmin"
+    staging = "arn:aws:iam::222222222222:role/TerraformAdmin"
+    prod    = "arn:aws:iam::333333333333:role/TerraformAdmin"
+  }
+
+  environment = terraform.workspace
+
+  vpc_cidr = {
+    dev     = "10.0.0.0/16"
+    staging = "10.10.0.0/16"
+    prod    = "10.20.0.0/16"
+  }
+}

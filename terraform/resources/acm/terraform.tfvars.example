@@ -1,0 +1,6 @@
+# Import flow — cert already ISSUED in console
+
+create_validation_records = false
+wait_for_validation       = false
+
+# route53_zone_id = "Z0123456789ABC"  # optional override
